@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Edit
+{% endblock %}
+
+{% block main %}
+<form action="/delete" method="post">
+   <div class="form-group mb-3 edit-div">
+      <select id="select_camp" class="form-select mb-3" name="select_camp" type="select">
+      <option selected disabled>Camp</option>
+      {% for camp in camps %}
+      <option>{{ camp.name }}</option>
+      {% endfor %}
+      </select>
+      <button class="btn btn-danger edit-btn" type="submit">Delete</button>
+    </div>
+</form>
+
+
+{% endblock %}

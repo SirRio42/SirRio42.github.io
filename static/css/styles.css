@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+nav
+{
+  font-family: 'Prata'
+}
+
+.nav-item
+{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav
+{
+  margin-left: auto;
+}
+
+#guest-login
+{
+  width: 10%;
+  height: 10%;
+  border: solid;
+}
+
+.btn
+{
+  margin: 20px;
+}
+
+#camper
+{
+    width: 5%;
+    height: 5%;
+    margin: 5px;
+}
+
+p
+{
+  margin: 5px;
+}
+
+.camp-button2
+{
+    font-size: 103%;
+}
+
+.add-div
+{
+ padding: 1%;
+}
+
+.edit-div
+{
+  padding: 1%;
+}
+
+.edit-btn
+{
+  margin-left: -1px;
+}
+
+#edit_link, #delete_link
+{
+  text-decoration: none;
+  color: white;
+}
+
+.form-title
+{
+  margin: 1% 1% 1% 0;
+}
+
+.edit-input
+{
+  margin-top: 16px;
+}
+
+#login-form
+{
+  margin-top: 20px;
+}
+
+.dog
+{
+  width: 25%;
+  margin-top: 20px;
+}
+
+.denied
+{
+  margin-top: 20px;
+  width: 25%;
+}

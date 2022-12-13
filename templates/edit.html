@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Edit
+{% endblock %}
+
+{% block main %}
+<form action="/edit" method="post">
+   <div class="form-group mb-3 edit-div">
+      <select id="select_camp" class="form-select mb-3" name="select_camp" type="select">
+      <option selected disabled>Camp</option>
+      {% for camp in camps %}
+      <option>{{ camp.name }}</option>
+      {% endfor %}
+      </select>
+      <select id="select_field" class="form-select" name="select_field" type="select">
+         <option selected disabled>Field to Change</option>
+         <option>Name</option>
+         <option>Location</option>
+         <option>Description</option>
+         <option>Internet</option>
+            <input autocomplete="off" class="form-control mb-3 edit-input" id="edit" name="edit" placeholder="New text here" type="text">
+            <button class="btn btn-primary edit-btn" type="submit">Submit Change</button>
+   </div>
+</form>
+
+{% endblock %}

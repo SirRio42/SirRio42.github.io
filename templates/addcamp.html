@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Add Camp
+{% endblock %}
+
+{% block main %}
+<form action="/addcamp" method="post">
+    <div class="form-group add-div">
+        <label class="form-title">Camp Name</label>
+        <input class="form-control" name="name" placeholder="Camp name" type="text">
+    </div>
+    <div class="form-group add-div">
+        <label class="form-title">Location</label>
+        <input class="form-control" name="location" placeholder="Address or coordinates" type="text">
+    </div>
+    <div class="form-group add-div">
+        <label class="form-title">Description</label>
+        <input class="form-control" name="description" placeholder="Amenities, surroundings, internet, etc." type="text">
+    </div>
+    <div class="form-group add-div">
+        <label class="form-title">Internet</label>
+        <input class="form-control" name="description" placeholder="Internect connectivity 1-5 rating" type="text">
+    </div>
+    <button class="btn btn-primary camp-button" type="submit">Add Campsite</button>
+</form>
+<button class="btn btn-secondary camp-button2"><a id="edit_link" href="/edit">Edit Campsites</a></button>
+<br>
+<button class="btn btn-danger camp-button3"><a id="delete_link" href="/delete">Delete a Campsite</a></button>
+
+{% endblock %}

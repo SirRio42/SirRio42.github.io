@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Visited
+{% endblock %}
+
+{% block main %}
+<p>Starlink Rating system: 1 being worst rating, 5 being a perfect rating. 0 for untested locations. Takes into account daily connectivity, and average strenth of connection.</p>
+   <table class="table">
+   <thead>
+      <th>Camp Name</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>Starlink Connection</th>
+   </thead>
+{% for camp in camps %}
+<tr>
+   <td>{{ camp.name }}</td>
+   <td>{{ camp.location }}</td>
+   <td>{{ camp.description }}</td>
+   <td>{{ camp.internet }}</td>
+</tr>
+{% endfor %}
+</table>
+<form action="/visited" method="post">
+   <center>
+      <button class="btn btn-primary camp-button" type="submit">Add or Edit Campsite</button>
+   </center>
+</form>
+{% endblock %}
